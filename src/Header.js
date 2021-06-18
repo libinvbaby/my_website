@@ -6,12 +6,12 @@ import FlagIcon  from "@material-ui/icons/Flag";
 import  SubscriptionsOutlinedIcon  from "@material-ui/icons/SubscriptionsOutlined";
 import StorefrontOutlinedIcon  from "@material-ui/icons/Storefront";
 import  SupervisedUserCircleIcon  from "@material-ui/icons/SupervisedUserCircle";
-import { Avatar } from "@material-ui/core";
-import {Avatar, IconButton} from '@material-ui/core';
-import AddIcon from '.@material-ui/icons/Add';
+import {Avatar}   from "@material-ui/core";
+import { IconButton} from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from "@material-ui/icons/Forum";
 import NotificationActiveIcon from '@material-ui/icons/NotificationsActive';
-import EpandMoreICon from '@material-ui/icons/ExpandMore';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function header() {
     return (
@@ -26,7 +26,7 @@ function header() {
                 </div>
             </div>
 
-            <div className="header_middile">
+            <div className="header_center ">
                 <div className='header_option'>
                     <HomeICon fontSize="large" />
                 </div>
@@ -49,12 +49,21 @@ function header() {
             </div>
 
             <div className="header_right">
-                <div className="headre_info">
+                <div className="header_info">
                     <Avatar />
                     <h4>Libin v Baby</h4>
                 </div>
                 <IconButton>
-                    <AddICon />
+                    <AddIcon />
+                </IconButton>
+                <IconButton>
+                    <ForumIcon />
+                </IconButton>
+                <IconButton>
+                    <NotificationActiveIcon />
+                </IconButton>
+                <IconButton>
+                    <ExpandMoreIcon />
                 </IconButton>
                 
             </div>

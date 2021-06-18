@@ -1,0 +1,19 @@
+.first_row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading{
+    padding-top: 50px;
+}
+p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.heading1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.gallery >div>h1{
+    text-align: center;
+}
