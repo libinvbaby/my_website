@@ -1,6 +1,10 @@
 .first_row{
     display: flex;
     justify-content: space-evenly;
+    background-image: url(https://image.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg);
+    color: white;
+    background-repeat:inherit;
+
 }
 
 .heading{
@@ -14,6 +18,50 @@ p{
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.img{
+    padding-bottom: 20px;
+}
 .gallery >div>h1{
     text-align: center;
+    
 }
+.Images{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.option {
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+   
+
+}
+.option >button{
+    color: white;
+    background-color: teal;
+    
+    
+}
+.images2{
+    display: flex;
+    justify-content: space-around;
+}
+.Images >li{
+    list-style-type: none;
+}
+
+.blue{
+    display: flex;
+    justify-content: space-around;
+}
+.green{
+    display: flex;
+    justify-content: space-around;
+}
+.btnbtn{
+    margin-left: 200px;
+    margin-top: 20px;
+    
+
+}
+
