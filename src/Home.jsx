@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./content.css";
 import Images from "./Images";
-import Shop from "./Shop";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
-class Content extends Component {
+class Home extends Component {
     constructor() {
         super();
         this.state = {
@@ -17,16 +17,16 @@ class Content extends Component {
     };
     render() {
         return (
-            <div>
-                <div  className="first_row  container">
-                    <div>
-                        <h1 className="heading">
-                            Hello every one
-                            <br />
-                            This is My site
+            <div style={{background:"linear-gradient(to bottom left, #33ccff 0%, #cc6600 100%)"}}>
+                <br /><br /> <br />
+                <div  className="first_row  container-fluid">
+                    <div className="col-lg-6">
+                        <h1 className="heading1 ">
+                            Home Page
+                                                        
                         </h1>
                         <br />
-                        <p className="col-lg-8" style={{ textAlign: "justify" }}>
+                        <p className="col-lg-11" style={{ textAlign: "justify",paddingLeft:"50px" }}>
                             Writing isn’t an easy task. Whether you craft words for B2B or B2C audiences, the challenges can
                             be many. I’ve created a diverse set of tips, tools, and resources to aid in shaping and
                             modifying your work.It’s not an exhaustive collection. Some ideas may seem familiar. Some will
@@ -36,13 +36,16 @@ class Content extends Component {
                             second gets granular with writing tips and tools you can use today.
                         </p>
                     </div>
-                    <div className="img   col-lg-5">
-                        <h1 className="heading1">This is second row</h1>
+                   <div className="col-lg-4">
+                   <div className="img col-lg-6">
+                        <h1 className="heading2">Home</h1>
                         <img
-                            src="https://image.shutterstock.com/image-vector/web-development-coding-cross-platform-260nw-1128653108.jpg"
+                            src="https://images.pexels.com/photos/4659806/pexels-photo-4659806.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="children"
                         />
                     </div>
+
+                   </div>
                 </div>
                 <br />
                 <div className="gallery  container">
@@ -69,8 +72,24 @@ class Content extends Component {
                             />
                             <button onClick={this.ButtonChange}>{this.state.change}</button>
                         </div>
+                        <div className="option col-lg-5">
+                            <Images
+                                name="facebook"
+                                age={this.state.age}
+                                image="https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130__340.jpg"
+                            />
+                            <button onClick={this.ButtonChange}>{this.state.change}</button>
+                        </div>
                     </div>
                     <div className="images2">
+                        <div className="option col-lg-5">
+                            <Images
+                                name="instagram"
+                                age="120"
+                                image="https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130__340.jpg"
+                            />
+                            <button onClick={this.ButtonChange}>{this.state.change}</button>
+                        </div>
                         <div className="option col-lg-5">
                             <Images
                                 name="instagram"
@@ -89,48 +108,10 @@ class Content extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="shop container">
-                    <h1 style={{ textAlign: "center" }}>SHOP</h1>
-                    <br />
-                    <div className="blue">
-                        <div className="col-lg-5 ">
-                            <Shop
-                                source=" https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=M
-                                nwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVu
-                  fDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
-                            />
-                            <button className='btnbtn'>Shop Now</button>
-                        </div>
-
-                        <div className="col-lg-5 ">
-                            <Shop
-                                source="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=
-                  MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                            />
-                            <button className='btnbtn'>Shop Now</button>
-                        </div>
-                    </div>
-                    <br />
-                    <div className="green ">
-                        <div className="col-lg-5 ">
-                            <Shop
-                                source="https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=
-                      rb-1.2.1&auto=format&fit=crop&w=1574&q=80"
-                            />
-                            <button className='btnbtn'>Shop Now</button>
-                        </div>
-                        <div className="col-lg-5 ">
-                            <Shop
-                                source="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&a
-                        uto=format&fit=crop&w=750&q=80"
-                            />
-                            <button className='btnbtn'>Shop Now</button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         );
     }
 }
 
-export default Content;
+export default Home;

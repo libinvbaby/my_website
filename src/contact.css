@@ -1,0 +1,27 @@
+div > h1{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 10vh;
+    color: white;
+}
+.col-lg-5>h2{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-size:6vh ;
+}
+.col-lg-5>p{
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(71, 70, 70);
+    font-size:4vh ;
+}
+.col-lg-3 >img{
+    width: 700px;
+    height: 500px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+.col-lg-3{
+    padding-left: 100px;
+}

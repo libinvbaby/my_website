@@ -2,42 +2,23 @@
     box-sizing: border-box;
 
 }
-.header{
-    height: 50px;
+nav{
     display: flex;
     justify-content: space-around;
-     font-size: 20px;
-    font-family: sans-serif;
-    background-color:powderblue;
-    
-
-}
-.Left_side{
-    display: flex;
-    padding-right: 20px;
-
-}
-.Left_side >img{
-    width: 50px;
-    
- }
- .logo1{
-     margin-left: 10px;
- }
-   
-.right_side{
-    display: flex;
-    list-style-type: none;
     align-items: center;
+    min-height: 10vh;
+    background:  linear-gradient(to top left, #6666ff 0%, #cc0066 100%);
+    color: white;
     
 }
-.right_side > div>li{
-    padding-right: 20px;
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    list-style: none;
+    color:white;
 }
-.Button{
+.nav-links >li{
     color: white;
-    background-color: gray;
-    border-radius: 33px;
 }
-
-

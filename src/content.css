@@ -1,28 +1,39 @@
 .first_row{
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    background-image: url(https://image.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg);
+    background-image: url(https://image.freepik.com/free-vector/abstact-hexagon-background-memphis-style_1017-31955.jpg);
     color: white;
-    background-repeat:inherit;
+    background-size: cover;
 
 }
 
-.heading{
-    padding-top: 50px;
+.heading1{
+    text-align: center;
+    color: white;
+    padding-right: 20px;
 }
 p{
-    font-size: 18px;
+    font-size: 25px;
     font-family: sans-serif;
 }
-.heading1{
+.heading2{
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size: 8vh;
+    margin-left: 240px;
+   
 }
-.img{
+.col-lg-6> img{
     padding-bottom: 20px;
+    width: 700px;
+    height: 600px;
+    border-radius: 50px;
 }
 .gallery >div>h1{
     text-align: center;
+    font-size: 10vh;
+
     
 }
 .Images{
@@ -33,13 +44,19 @@ p{
 .option {
     padding: 10px 20px 20px 20px;
     text-align: center;
+    
    
 
+}
+.image{
+    border-radius: 50px;
 }
 .option >button{
     color: white;
     background-color: teal;
-    
+    border:0px;
+    border-radius: 30px;
+
     
 }
 .images2{
